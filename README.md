@@ -4,7 +4,7 @@
 
 Implementation of a Machine Learning technique without frameworks, this is a part from an activity with feedback.
 
-The study case consists in the management of a dataset with the information of different wines, each column have different characteristics, for example:
+The study case consists in the management of a dataset with the information of different wines("wine.data"), each column have different characteristics, for example:
   
   - Alcohol
   - Malic acid
@@ -27,3 +27,5 @@ The objetive to use this method with the dataset of wine is predict the Alcohol 
 In the code, there is an optimization model(gradient descent), normalization method(min and max method) and a graphic that prints the mean of the error acumulations.
 
 Finally, the print shows how the model learn and reduce the errors with each epoch of the path. The final values indicate the behavior of each one if you predict any value of the output, in this case, of the alcohol.
+
+If you need more information about the dataset, there is "wine.names" file that have additional information about the author, the sources and the data collected.
