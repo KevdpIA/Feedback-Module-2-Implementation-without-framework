@@ -4,28 +4,20 @@
 
 Implementation of a Machine Learning technique without frameworks, this is a part from an activity with feedback.
 
-The study case consists in the management of a dataset with the information of different wines("wine.data"), each column have different characteristics, for example:
+The study case consists in the management of a dataset with the information of the demand of bikes in Seoul, South Korea. Each column have different characteristics and the used in this activity:
   
-  - Alcohol
-  - Malic acid
-  - Ash
-  - Alcalinity of ash
-  - Magnesium
-  - Total phenols
-  - Flavonoids
-  - Nonflavanoid phenols
-  - Proanthocyanins
-  - Color intensity
-  - Hue
-  - OD280/OD315 of diluted wines
-  - Prolines
+ *  Dependent variable:
+ 
+  - Rented Bike count : Count of bikes rented at each hour
+  
+ *  Independent variable:
+ 
+  - Hour : Hour of he day
+  - Temperature : Temperature in Celsius
+  - Windspeed : m/s
 
-In this code, is developed a linear regression to predict with an hypothesis, an output variable affected by four input variables.
+In this code, are an implementation of a linear regression WIHTOUT FRAMEWORK to obtain the coefficents of the independent variables to model an equation for predict the count of bikes rented at each hour.
 
-The objetive to use this method with the dataset of wine is predict the Alcohol levels in wine according to the behaviors of Malic acid, Flavonoids, Proanthocyanins and Color intensity.
+The objetive from use this method with the dataset of rented bikes in Seoul is learn the process of the Machine Learning to predict values with an optimization model(gradient descent), normalization method(min and max method) and a graphic that prints the mean of the error acumulations.
 
-In the code, there is an optimization model(gradient descent), normalization method(min and max method) and a graphic that prints the mean of the error acumulations.
-
-Finally, the print shows how the model learn and reduce the errors with each epoch of the path. The final values indicate the behavior of each one if you predict any value of the output, in this case, of the alcohol.
-
-If you need more information about the dataset, there is "wine.names" file that have additional information about the author, the sources and the data collected.
+Finally, the print shows how the model learn and reduce the errors with each epoch of the path. The final values indicate the behavior of each one if you predict any value of the output, in this case, the count of rented bikes.
