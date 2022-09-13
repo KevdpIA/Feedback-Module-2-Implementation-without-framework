@@ -1,6 +1,6 @@
 # Feedback Module 2: Implementation of ML without framework
-- Kevin Joan Delgado Pérez A01706328
-- 26/08/22
+# Kevin Joan Delgado Pérez A01706328
+# 26/08/22
 
 Implementation of a Machine Learning technique without frameworks, this is a part from an activity with feedback.
 
