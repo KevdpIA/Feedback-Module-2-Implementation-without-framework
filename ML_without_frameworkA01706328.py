@@ -42,7 +42,7 @@ def graph(v_inputs, data,v_output):                                 # Graficar e
 	for i in range(len(data)):
 		h = hypothesis(v_inputs,data[i])                                # Valores de prediccion
 		e_ac=+((h-v_output[i])**2)                                      # Acumulamos los errores obtenidos entre cada prediccion y su valor real
-		print( "hyp  %f  v_output %f " % (h,  y[i]))   
+		print( "prediction  %f  v_output %f " % (h,  y[i]))   
 	e_prom=e_ac/len(data)                                               # Promediar error
 	err.append(e_prom)                                                  # Guardar el promedio del error
 
@@ -77,10 +77,13 @@ while True:
 	epochs = epochs + 1                                         # Iterar epoca
 
 	if(epochs == 50):                                           # Parar algoritmo al tener 50 epocas
-		print ("final v_inputs:")
-		print (v_inputs)
-		print(epochs)
+		print ("final value coefficents:")
+		print ("[Hour coef, Temperature coef, Wind speed coef]: ", v_inputs)
+		print("epochs: ",epochs)
 		break
 
+plt.title('Performance of the model')
+plt.xlabel('Epochs')
+plt.ylabel('Mean error')
 plt.plot(err)
 plt.show()
