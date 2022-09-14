@@ -25,10 +25,10 @@ Finally, the print shows how the model learn and reduce the errors with each epo
 # Notes:
 
 
-  ## If you want to run the code, install the dependencies with
+  ## If you want to run the code, install the dependencies with:
   
   
-    * pip install ./requirements.txt
+     pip install ./requirements.txt
   
   
   ## I ONLY use the framework sklearn to make the split data for the test of the model.
